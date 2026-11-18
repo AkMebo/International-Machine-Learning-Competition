@@ -35,6 +35,12 @@ The system is only actually learning during Step 2 and Step 6
 3. **Is CO2 above 1200 ppm?**
     * **Yes** → OPEN the roof
     * **No** → KEEP CLOSED
+## Problem C: To Fit or Not to Fit (5 points)
+### a) Model 1: J1 = 9.26, Model 2: J2 = 4.08. The scoring model selects Model 2 since 4.08 < 9.26
+### b) Model 1 fits the training data perfectly. Its sum of squared errors is exactly 0
+   - Model 2 is selected because J is not looking for a perfect fit, it's looking for a balance between fit and simplicity (regularization). Model 1 has high coefficients which are penalized heavily. Model 2 has a smaller error overall when you add the penalty because its coefficients are much smaller and simpler.
+   - The term λ∑a^2 is to prevent overfitting. It is a Regularization Penalty. It ensures the model doesn't just memorize the training data (like Model 1 did) but learns a smoother, more general pattern that will hopefully perform better on new, unseen data.
 
+## Problem D: The Price of Drift
 ## Problem C:  To Fit or Not to Fit (5 points)
 
